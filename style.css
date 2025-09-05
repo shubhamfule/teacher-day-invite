@@ -199,15 +199,12 @@ body {
     transform-origin: top right;
 }
 
-..envelope-lid-secondary {
+.envelope-lid-secondary {
     background-color: #fff;
     clip-path: polygon(50% 38%, 0 0, 100% 0);
     transition: transform 500ms 1000ms;
     transform-origin: top;
-    transform: rotateX(0deg);   /* 👈 stays closed at first */
 }
-
-
 
 .envelope:hover .envelope-lid-secondary {
     transform: rotateX(180deg);
